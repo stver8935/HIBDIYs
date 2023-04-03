@@ -105,6 +105,14 @@ class Strings{
 
 
 
+
+  static const String TMP = "온도";
+  static const String HUM = "습도";
+  static const String LIGHT = "광량";
+  static const String FERT = "비옥도";
+
+  static const String UNKNOWN = "알수없음";
+
   /// explain text
   /// 광량 상태값 설명
   static const String EXP_STATE_LIGHT = "광량이 증가하면 광포화점까지 광헙성 작용이\n"

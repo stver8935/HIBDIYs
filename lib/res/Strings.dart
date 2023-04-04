@@ -122,11 +122,19 @@ class Strings{
   static const String EXP_STATE_TMP = "식물의 탄소동화작용, 호흡작용, 증산작용 등\n"
       " 생리적 작용에 영향을 미칩니다.";
   /// 습도 상태값 설명
-  static const String EXP_STATE_HUM = "공기습도가 부족하면 잎 끝이 마르는 현상이 나타납니다.\n"
+  static const String EXP_STATE_HUMDI = "공기습도가 부족하면 잎 끝이 마르는 현상이 나타납니다.\n"
       "반면에 공기 중의 습도가 너무 높으면\n"
       " 증산 작용이 줄어들어 양분의 흡수와 \n"
       "광합성 작용 또한 느려지며 꽃 피는 것도 방해를 받게 됩니다.";
   /// 비옥도 상태값 설명
   static const String EXP_STATE_FERT = "생육 환경내 식물이 필요로 하는 영양소를 수치화 한 값입니다.";
+
+
+  static const String HEATER = "히터";
+  static const String LED = "LED";
+  static const String VENTILATOR = "환풍기";
+  static const String UNDER_WATER_MOTOR = "수중 모터";
+
+  static const String DEVICE_CONTROLL = "장비 제어";
 
 }

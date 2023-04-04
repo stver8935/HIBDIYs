@@ -47,7 +47,7 @@ class DeviceListItemCard extends StatelessWidget {
                       child: getDeviceIcon(DeviceType.TYPE_02),
                     ),
                   ),
-                  Spacer(
+                  const Spacer(
                     flex: 1,
                   ),
                   Expanded(
@@ -60,29 +60,27 @@ class DeviceListItemCard extends StatelessWidget {
                           Text(
                             title,
                             overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: FontSize.SIZE_28,
                                 fontWeight: FontWeight.bold
                             ),
                           ),
-                          Text(productId,overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: FontSize.SIZE_17)),
-                          Text(updateTime,overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: FontSize.SIZE_17))
+                          Text(productId,overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: FontSize.SIZE_17)),
+                          Text(updateTime,overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: FontSize.SIZE_17))
                         ],
                       ),
                     ),
                   ),
                   Expanded(
                     flex: 3,
-                    child: Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: const [
-                          Icon(Icons.notifications_active,),
-                          Text(""), // padding Text
-                          Text(Strings.CONN_FAIL,style: TextStyle(fontSize: FontSize.SIZE_12,fontWeight: FontWeight.bold,color: Colors.red),)
-                        ],
-                      ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: const [
+                        Icon(Icons.notifications_active,),
+                        Text(""), // padding Text
+                        Text(Strings.CONN_FAIL,style: TextStyle(fontSize: FontSize.SIZE_12,fontWeight: FontWeight.bold,color: Colors.red),)
+                      ],
                     ),
                   ),
                 ],

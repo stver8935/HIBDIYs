@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hibdiys/data/model/DeviceInfo.dart';
+import 'package:hibdiys/data/TestThemeData.dart';
 import 'package:hibdiys/data/model/type/DeviceType.dart';
 import 'package:hibdiys/ui/custom/CustomSearchDelegate.dart';
 import 'package:hibdiys/ui/custom/card/DeviceListItemCard.dart';
@@ -15,17 +15,7 @@ class DeviceListPage extends StatefulWidget{
 
 class _DeviceListPage  extends State<DeviceListPage> {
 
-  List<DeviceInfo> items = List<DeviceInfo>.filled(10,DeviceInfo(
-      uid: "63d9ee2190759dfee80e4724",
-      productId: "animalAvoid",
-      productName: "비둘기가라",
-      macAddress: "null",
-      userId: "frogmon",
-      userYn: "0",
-      lastUpdateTime: "2020-12-11 11:07:14",
-      lastUpdateUser: "frogmon",
-      productType: "1"
-  ),growable: true);
+
 
 
   @override
@@ -62,13 +52,13 @@ class _DeviceListPage  extends State<DeviceListPage> {
               child: ListView.builder(
                 itemBuilder: (BuildContext ctx,int idx){
                   return DeviceListItemCard(
-                      uid: items[idx].productId,
+                      uid: TestThemeData.instance.getDeviceList()[idx].productId,
                       deviceType: DeviceType.TYPE_02,
-                      productId: items[idx].productId,
-                      title: items[idx].productName,
-                      updateTime: items[idx].lastUpdateTime);
+                      productId: TestThemeData.instance.getDeviceList()[idx].productId,
+                      title: TestThemeData.instance.getDeviceList()[idx].productName,
+                      updateTime: TestThemeData.instance.getDeviceList()[idx].lastUpdateTime);
                 },
-                itemCount: items.length,),
+                itemCount: TestThemeData.instance.getDeviceList().length,),
             )
       ),
     );

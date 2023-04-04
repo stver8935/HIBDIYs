@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hibdiys/data/model/DeviceInfoDetail.dart';
+import 'package:hibdiys/res/FontSize.dart';
 import 'package:hibdiys/res/Strings.dart';
 
 class DeviceInfoDetailCard extends StatelessWidget{
@@ -21,34 +22,34 @@ class DeviceInfoDetailCard extends StatelessWidget{
           children: [
             Row(
               children:  <Widget>[
-                const Text("${Strings.NAME} : "),
-                Text(item.userId)
+                const Text("${Strings.NAME} : ",style: TextStyle(fontSize: FontSize.SIZE_18)),
+                Text(item.userId,style: const TextStyle(fontSize: FontSize.SIZE_18))
               ],
             ),
             Row(
               children: <Widget>[
-                const Text("${Strings.DEVICE_TYPE} : "),
-                Text(item.userId)
+                const Text("${Strings.DEVICE_TYPE} : ",style: TextStyle(fontSize: FontSize.SIZE_18)),
+                Text(item.userId,style: const TextStyle(fontSize: FontSize.SIZE_18))
               ],
             ),
             Row(
               children: <Widget>[
-                const Text("${Strings.TEAM_VIEWER_ID} : "),
-                Text(item.teamViewerId)
+                const Text("${Strings.TEAM_VIEWER_ID} : ",style: TextStyle(fontSize: FontSize.SIZE_18)),
+                Text(item.teamViewerId,style: const TextStyle(fontSize: FontSize.SIZE_18))
               ],
             ),
             Row(
               children: <Widget>[
-                const Text("${Strings.CUR_UPDATE} : "),
-                Text(item.lastUpdateTime)
+                const Text("${Strings.CUR_UPDATE} : ",style: TextStyle(fontSize: FontSize.SIZE_18)),
+                Text(item.lastUpdateTime,style: const TextStyle(fontSize: FontSize.SIZE_18))
               ],
             ),
             Card(
-              margin: EdgeInsets.only(top: 20),
+              margin: const EdgeInsets.only(top: 20),
               child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 width: double.infinity,
-                child: Text("딸기를 키우기 위한 장비"),
+                child: const Text("딸기를 키우기 위한 장비",style: TextStyle(fontSize: FontSize.SIZE_18)),
               ),
             )
           ],

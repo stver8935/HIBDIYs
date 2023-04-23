@@ -1,6 +1,9 @@
 class Strings{
 // Nevigation Menu
 
+  Strings._();
+
+
   /// 네비게이션 메뉴 - 홈
   static const String navHome = "홈";
   /// 네비게이션 메뉴 - 장치 리스트

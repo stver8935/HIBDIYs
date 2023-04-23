@@ -8,6 +8,7 @@
 ///
 /// 타이틀 : 18pt ~ 32pt
 class FontSize{
+  FontSize._();
   // 10pt 이하의 폰트 사이즈는 추가 하지 않을것을 권장
   static const double SIZE_10 = 10.0;
   static const double SIZE_11 = 11.0;
